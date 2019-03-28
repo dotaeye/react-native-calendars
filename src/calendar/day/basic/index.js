@@ -91,7 +91,7 @@ class Day extends Component {
         disabled={marking.disableTouchEvent}
       >
         <Text allowFontScaling={false} style={textStyle}>
-          {lunar.cDay}
+          {lunar.IDayCn}
         </Text>
         <Text allowFontScaling={false} style={textStyle}>
           {String(this.props.children)}

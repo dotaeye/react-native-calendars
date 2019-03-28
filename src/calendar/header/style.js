@@ -1,17 +1,17 @@
-import {StyleSheet, Platform} from 'react-native';
-import * as defaultStyle from '../../style';
+import { StyleSheet, Platform } from "react-native";
+import * as defaultStyle from "../../style";
 
-const STYLESHEET_ID = 'stylesheet.calendar.header';
+const STYLESHEET_ID = "stylesheet.calendar.header";
 
-export default function(theme={}) {
-  const appStyle = {...defaultStyle, ...theme};
+export default function(theme = {}) {
+  const appStyle = { ...defaultStyle, ...theme };
   return StyleSheet.create({
     header: {
-      flexDirection: 'row',
-      justifyContent: 'space-between',
+      flexDirection: "row",
+      justifyContent: "space-between",
       paddingLeft: 10,
       paddingRight: 10,
-      alignItems: 'center'
+      alignItems: "center"
     },
     monthText: {
       fontSize: appStyle.textMonthFontSize,
@@ -34,15 +34,15 @@ export default function(theme={}) {
       })
     },
     week: {
-      marginTop: 7,
-      flexDirection: 'row',
-      justifyContent: 'space-around'
+      flexDirection: "row",
+      height: 24,
+      justifyContent: "space-around",
+      alignItems: "center"
     },
     dayHeader: {
-      marginTop: 2,
-      marginBottom: 7,
+      lineHeight: 24,
       width: 32,
-      textAlign: 'center',
+      textAlign: "center",
       fontSize: appStyle.textDayHeaderFontSize,
       fontFamily: appStyle.textDayHeaderFontFamily,
       color: appStyle.textSectionTitleColor
