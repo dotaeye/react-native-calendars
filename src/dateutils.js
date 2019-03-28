@@ -89,7 +89,7 @@ function page(xd, firstDayOfWeek) {
   }
 
   let result = before.concat(days.slice(1, days.length - 1), after);
-  if (result / 7 < 6) {
+  if (result.length / 7 < 6) {
     const lastDay = result[result.length - 1].clone();
     const addRow = fromTo(result[result.length - 1], lastDay.addDays(7));
     result = result.concat(addRow);
