@@ -36,6 +36,7 @@ class CalendarListItem extends Component {
             },
             this.style.calendar
           ]}
+          textStyle={this.props.textStyle}
           current={row}
           hideArrows={this.props.hideArrows}
           hideExtraDays={this.props.hideExtraDays}

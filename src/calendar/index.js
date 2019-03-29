@@ -198,6 +198,7 @@ class Calendar extends Component {
         <DayComp
           state={state}
           theme={this.props.theme}
+          textStyle={this.props.textStyle}
           onPress={this.pressDay}
           onLongPress={this.longPressDay}
           date={xdateToData(day)}

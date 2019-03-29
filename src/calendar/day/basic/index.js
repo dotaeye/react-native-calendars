@@ -82,6 +82,8 @@ class Day extends Component {
       textStyle.push(this.style.todayText);
     }
 
+    textStyle.push(this.props.textStyle);
+
     return (
       <TouchableOpacity
         style={containerStyle}
@@ -96,7 +98,7 @@ class Day extends Component {
         <Text allowFontScaling={false} style={textStyle}>
           {String(this.props.children)}
         </Text>
-        {dot}
+        {/* {dot} */}
       </TouchableOpacity>
     );
   }
